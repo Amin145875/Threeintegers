@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //declare vaiables
+    int a, b, c, result, max;
+    printf("enter the first integer: \n"); 
+    scanf("%d", &a);
+    printf("enter the second integer:\n ");
+    scanf("%d", &b);
+    printf("enter the third integer:\n ");
+    scanf("%d", &c);
+    //results calculations
+    result=(a+b+abs(a-b))/2;
+    max=(result+c+abs(result-c))/2;
+    //display on the screen
+    printf("\nMaximum value of three integers: %d", max);//max value of integers
+	
+    return 0;
+}
